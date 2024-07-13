@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "test-task-ns"
+version = "0.1.0"
+description = ""
+authors = ["nikolay1-97 <nikolay111_connect@mail.ru>"]
+readme = "README.md"
+packages = [{include = "test_task_ns"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "0.109.0"
+sqlalchemy = "2.0.25"
+alembic = "^1.13.2"
+pydantic-settings = "^2.3.4"
+asyncpg = "^0.29.0"
+psycopg2-binary = "^2.9.9"
+redis = "^5.0.7"
+uvicorn = "^0.30.1"
+aioredis = "^2.0.1"
+python-jose = "^3.3.0"
+gunicorn = "^22.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
